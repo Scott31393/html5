@@ -1,0 +1,98 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+        body {
+            min-width: 1920px;
+            margin: 0px !important;
+            background-color: black;
+            color: white;
+        }
+
+        @font-face {
+            font-family: Raleway;
+            src: url(rpt-Regular.ttf);
+        }
+
+        @font-face {
+            font-family: Raleway;
+            src: url(rpt-Bold.otf);
+            font-weight: bold;
+        }
+
+        div, span {
+            font-family: Raleway;
+        }
+
+        .container-fixed {
+            height: 100px;
+            width: 1920px;
+            color: white;
+            font-size: 140px;
+        }
+
+
+        /*********************** Make it a marquee **********************/
+        .marquee {
+            /*width: 450px;*/
+            margin: 0 auto;
+            overflow: hidden;
+            white-space: nowrap;
+            box-sizing: border-box;
+            animation: marquee 25s linear infinite;
+            -webkit-animation: marquee 25s linear infinite; /* Chrome, Safari, Opera */
+        }
+
+        /* Make it move */
+/*        @-webkit-keyframes marquee {
+            0% {
+                text-indent: 10em;
+            }
+
+            to {
+                text-indent: -14em;
+            }
+        }
+*/
+	@-webkit-keyframes scroll-en {                                          
+            0% {                                                                
+                -webkit-transform: translateX(100%);                            
+            }                                                                   
+                                                                                
+            100% {
+                -webkit-transform: translateX(-100%);
+            }                                                                   
+        }
+        .scroll-en {
+            z-index: 2000;
+            overflow: hidden;
+            animation: scroll-en 21s linear infinite;
+            -webkit-animation: scroll-en 21s linear infinite; /* Chrome, Safari, Opera */
+            font-size: 185px;
+            width: 5000px;
+        }
+
+        /* Make it move */
+        @-webkit-keyframes scroll-en {
+            0% {
+                text-indent: 10em;
+            }
+
+            to {
+                text-indent: -15em;
+            }
+        }
+    </style>
+
+</head>
+<body style="overflow:hidden;">
+
+    <video autoplay="true" controls="controls" loop="true">
+    <source src="bunny-h264.mov">
+    Your browser does not support the HTML5 Video element.
+    </video>
+
+</body>
+
+</html>
